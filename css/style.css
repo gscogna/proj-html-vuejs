@@ -6,15 +6,17 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  font-family: 'Abril Fatface', cursive;
   overflow: auto;
 }
+
+/* header */
 
 header{
   background-image: url(../img/avadabarbers-homepage-hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
-  height: 966px;
   position: relative;
 }
 
@@ -41,6 +43,8 @@ header{
   color:#be9359;
 }
 
+/* sezione jumbotron */
+
 .jumbotron{
   width: 60%;
   margin: auto;
@@ -62,16 +66,23 @@ header{
 }
 
 .title-name h1{
-  font-size: 90px;
+  font-size: 80px;
 }
 
+.title-name h1::after{
+  content: '';
+  display: table;
+  border-bottom: 4px solid #be9359;
+  width: 45%;
+  padding:4px;
+}
 
 .title-name p{
   color:#69625c;
   font-family: Lato;
   font-weight: 600;
   font-size:24px;
-  padding:25px 0;
+  padding:35px 0;
 }
 
 .fusion{
@@ -90,5 +101,83 @@ header{
 }
 
 .fusion:hover{
-  opacity: 0.8;
+  opacity: 0.6;
+}
+
+/* sezione icon fix */
+.icon-fix{
+  position: fixed;
+  top: 200px;
+  color:#33475b;
+  right: 20px;
+  cursor: pointer;
+}
+
+.demos{
+  height: 66px;
+  width: 66px;
+  background-color:white;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy{
+  height: 66px;
+  width: 66px;
+  background-color:white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-fix i{
+  font-size: 25px;
+}
+
+.icon-fix  p{
+  font-size:15px
+}
+
+/* section pro-barbers */
+.pro-barbers{
+  background-image: url(../img/avadabarbers-about-introbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  height: 550px;
+}
+
+.info-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.info-title p{
+  text-transform: uppercase;
+  color: #be9359;
+  font-size: 1.2rem;
+}
+
+.info-title h3{
+  font-family: "Abril Fatface";
+  text-transform: capitalize;
+  color: #b1b1b1;
+  font-size: 60px;;
+  padding:25px 0;
+  
+}
+
+/* section services */
+.services{
+  height:890px;
 }
