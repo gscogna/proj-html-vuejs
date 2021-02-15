@@ -6,6 +6,7 @@
 
 body{
   font-family: 'Lato', sans-serif;
+  overflow: auto;
 }
 
 header{
@@ -13,6 +14,81 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
-  height: 900px;
-  
+  height: 966px;
+  position: relative;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header-menu i{
+  font-size: 22px;
+  color:white;
+  padding:15px;
+  cursor:pointer
+}
+
+.header-menu i:hover{
+  color:#be9359;
+}
+
+.jumbotron{
+  width: 60%;
+  margin: auto;
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title-name{
+  align-self: center;
+  font-family: "Abril Fatface";
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-style: normal;
+  font-size: 35px;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.title-name h1{
+  font-size: 90px;
+}
+
+
+.title-name p{
+  color:#69625c;
+  font-family: Lato;
+  font-weight: 600;
+  font-size:24px;
+  padding:25px 0;
+}
+
+.fusion{
+  padding: 17px 40px;
+  text-align: center;
+  border:2px solid #be9359;
+  opacity: 1;
+  background: transparent
+}
+
+.fusion a {
+  text-decoration: none;
+  color:#be9359;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.fusion:hover{
+  opacity: 0.8;
 }

@@ -9,6 +9,10 @@
     <!-- Link Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+    <!-- Link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
     <!-- Link foglio di stile personale -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,12 +20,24 @@
     <div id="app" class="container">
         <header>
             <div class="header-top">
-                <div class="header-logo"></div>
-                <div class="header-menu"></div>
+                <div class="header-logo">
+                    <img src="img/avadabarbers-logo-x1.png" alt="immagine-logo">
+                </div>
+                <div class="header-menu">
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
             <div class="jumbotron">
-                <div class="title-name"></div>
-                <div class="immagine-importante"></div>
+                <div class="title-name">
+                    <h1>Barber Shop</h1>
+                    <div id="riga"></div>
+                    <p>The Pinnacle of Male Grooming</p>
+                    <button class="fusion"><a href="#">Learn More</a></button>
+                </div>
+                <div class="immagine-importante">
+                    <img src="img/avadabarbers_hero_focalmirror-600x825.png" alt="img-jumbotrone">
+                </div>
             </div>
         </header>
         <main>
