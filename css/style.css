@@ -4,3 +4,15 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+header{
+  background-image: url(../img/avadabarbers-homepage-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  height: 900px;
+  
+}
