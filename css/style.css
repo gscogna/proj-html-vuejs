@@ -111,6 +111,7 @@ header{
   color:#33475b;
   right: 20px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .demos{
@@ -123,6 +124,7 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 10px 20px 5px rgba(0,0,0,.15);
 }
 
 .buy{
@@ -135,6 +137,7 @@ header{
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  box-shadow: 0 10px 20px 5px rgba(0,0,0,.15);
 }
 
 .icon-fix i{
@@ -180,4 +183,132 @@ header{
 /* section services */
 .services{
   height:890px;
+  position: relative;
+}
+
+.servizi{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+  width: 65%;
+  margin:auto;
+}
+
+.box{
+  text-align: center;
+  padding:0px 20px;
+  white-space: pre-wrap;
+}
+
+.box img{
+  height: 100px;
+}
+
+.box p{
+  color: #686868;
+  font-size: 18px;
+  line-height: 1.8;
+  font-family: Lato;
+  font-weight: 300;
+  text-align: center;
+}
+
+.title-gold{
+  font-size: 2rem;
+  color: #be9359;
+  padding: 15px;
+}
+
+.inside{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: 10%;
+  left:50%;
+  text-transform: uppercase;
+  color:#be9359;
+  font-size: 20px;
+}
+
+/* sezioni prodotti */
+
+.products{
+  height: 1000px;
+  background-image: url(../img/avadabarbers-reviewsbackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  position: relative;
+}
+
+.aggiustamento p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 1,4rem;
+}
+
+.aggiustamento h3{
+  font-size: 80px;
+}
+
+.items{
+  padding:50px 0px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.format{
+  text-align: center;
+  padding:0px 20px;
+  white-space: pre-wrap;
+  color:#be9359;
+}
+
+.format h3{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 40px;
+}
+
+.format p{
+  font-family: 'Lato', sans-serif;
+}
+
+.next{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: 5%;
+  left:50%;
+  text-transform: uppercase;
+  color:#be9359;
+  font-size: 20px;
+}
+
+/* sezione barba */
+.shaving{
+  height:500px;
+}
+
+.contenitore{
+  display: flex;
+}
+
+.cont-testo{
+  background: #121413;
+  padding: 100px;
+}
+
+.cont-img{
+  background-image: url(../img/avadabarbers-cta-background.jpg);
+  background-size: cover;
+  background-position: left top;
+}
+
+.cont-testo + p{
+  font-family: Lato;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-style: normal;
+  color:#be9359;
+  font-size: 16px;
 }
