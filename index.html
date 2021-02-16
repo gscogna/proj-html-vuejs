@@ -165,16 +165,19 @@
         
             <!-- sesta sezione post recenti -->
             <section class="posts">
-                <div class="info-title ingrandimento">
+                <div class="info-title">
                     <p>Tales from the barber shop</p>
                     <h3>Recent Blog Posts</h3>
                 </div>
-                <!-- post di prova -->
-                <div class="vue">
-                    <img src="img/avadabarbers-second-blog-320x202.jpg" alt="logo-immagine">
-                    <h3>Avada Barbers Now Open</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut dapibus magna. Praesent semper,</p>
+                <!-- post fatto con vue -->
+                <div class="prova">
+                    <div class="reparto" v-for="riquadro in riquadri">
+                        <img :src="riquadro.foto"  alt="logo-immagine">
+                        <h3 class="titolo"> {{riquadro.titolo}} </h3>
+                        <p class="paragrafo"> {{riquadro.paragrafo}} </p>
+                    </div>
                 </div>
+                <button class="fusion inside"> Read more for our blog</button>
             </section>
         </main>
         

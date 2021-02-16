@@ -375,9 +375,44 @@ header{
 .posts{
   height: 1000px;
   margin-top:200px;
+  position: relative;
 }
 
-.ingrandimento h3{
-  font-size: 90px;
+
+.prova{
+  padding: 100px 20px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
+.reparto img{
+  transition:all 1s;
+  opacity: 1;
+}
+
+.reparto img:hover{
+  transform: scale3d(1.1,1.1,1);
+  opacity: 0.7;
+}
+
+.reparto{
+  padding: 0 50px;
+}
+
+.titolo{
+  font-family: "Abril Fatface";
+  text-align: center;
+  color:#be9359;
+  font-size: 35px;
+  padding:20px 0;
+}
+
+.paragrafo{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+/* Footer */
