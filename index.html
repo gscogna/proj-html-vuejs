@@ -20,7 +20,7 @@
 <body>
     <div id="app" class="container">
         <header>
-            <div class="header-top">
+            <div id="nav" class="header-top" :class="{sticky:active}" :class="toggleNavClass()">
                 <div class="header-logo">
                     <img src="img/avadabarbers-logo-x1.png" alt="immagine-logo">
                 </div>
@@ -45,8 +45,8 @@
                     <p>Demos</p>
                 </div>
                 <div class="buy">
-                    <i class="fas fa-shopping-cart"></i>
-                    <p>BuyNow</p>
+                    <img src="img/Immagine.png" alt="">
+                    <p>On Sale</p>
                 </div>
             </div>
         </header>
@@ -61,6 +61,7 @@
             </section>
         
             <!-- seconda sezione servizi -->
+            <div id="triangolo-white"></div>
             <section class="services">
                 <div class="info-title">
                     <p>Mens Grooming</p>
@@ -87,6 +88,7 @@
             </section>
         
             <!-- terza sezione prodotti -->
+            <div id="triangolo-nero"></div>
             <section class="products">
                 <div class="info-title aggiustamento">
                     <p>WE HAVE YOU COVERED</p>
@@ -162,10 +164,10 @@
                     </div>
                 </div>
             </section>
-        
             <!-- sesta sezione post recenti -->
             <section class="posts">
-                <div class="info-title">
+                <div id="triangolo-capovolto"></div>
+                <div class="info-title pad">
                     <p>Tales from the barber shop</p>
                     <h3>Recent Blog Posts</h3>
                 </div>

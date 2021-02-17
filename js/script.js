@@ -1,6 +1,7 @@
 var app = new Vue({
     el:'#app',
     data:{
+        active: false,
         riquadri:[
             {
                 foto: 'img/avadabarbers-second-blog-320x202.jpg',
@@ -18,5 +19,25 @@ var app = new Vue({
                 paragrafo: 'T facim a barb come barbanera il 4 imperatore.'
             }
         ]
+    },
+    methods: {
+        toggleNavClass() {
+            if (this.active == false) {
+                return 'nav'
+            } else {
+                return 'sticky-nav'
+            }
+
+        }
+    },
+    mounted() {
+        window.document.onscroll = () => {
+            let navBar = document.getElementById('nav');
+            if (window.scrollY > navBar.offsetTop) {
+                this.active = true;
+            } else {
+                this.active = false;
+            }
+        }
     }
 });
