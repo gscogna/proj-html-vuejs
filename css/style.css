@@ -416,3 +416,54 @@ header{
 }
 
 /* Footer */
+.top-footer{
+  height: 480px;
+  background-color: #121314;
+}
+
+.center-top{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin:0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
+.info-location p{
+  font-family: 'Lato', sans-serif;
+  padding:40px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #8c8989;
+}
+
+.info-location h4{
+  font-family: 'Lato', sans-serif;
+  color:#be9359;
+  padding-bottom:10px;
+}
+
+.shop img ,
+.appuntament img {
+  padding-bottom: 25px;
+}
+
+.icons i{
+  color:white;
+  font-size:25px;
+  padding:5px;
+}
+
+.sub-footer{
+  height: 100px;
+  background-color: #161718;
+}
+
+.sub-footer p{
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+  color:grey;
+  text-align: center;
+  padding-top: 50px;
+}
